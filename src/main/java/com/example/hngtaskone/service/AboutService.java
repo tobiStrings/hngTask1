@@ -8,7 +8,7 @@ public class AboutService {
 
     public About getAbout(){
         return About.builder()
-                .slackUserName("Ligali Titobiloluwa1️⃣")
+                .slackUsername("Ligali Titobiloluwa1️⃣")
                 .backend(true)
                 .age(17)
                 .bio("I am titobiloluwa a java backend developer")

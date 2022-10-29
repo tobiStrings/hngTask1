@@ -6,7 +6,7 @@ import lombok.Data;
 @Builder
 @Data
 public class About {
-    private String slackUserName;
+    private String slackUsername;
     private boolean backend;
     private int age;
     private String bio;
