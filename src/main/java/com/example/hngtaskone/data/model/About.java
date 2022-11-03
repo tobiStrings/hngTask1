@@ -1,4 +1,4 @@
-package com.example.hngtaskone.model;
+package com.example.hngtaskone.data.model;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.example.hngtaskone.service;
 
-import com.example.hngtaskone.model.About;
+import com.example.hngtaskone.data.model.About;
 import org.springframework.stereotype.Service;
 
 @Service
