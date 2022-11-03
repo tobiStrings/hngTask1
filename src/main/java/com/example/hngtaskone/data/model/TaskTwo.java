@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 public class TaskTwo {
     private String slackUsername;
-    private OperationType operation_type;
     private int result;
+    private OperationType operation_type;
 }
