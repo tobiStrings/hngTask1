@@ -24,13 +24,13 @@ public class TaskController {
 
     @PostMapping("/task2")
     public ResponseEntity<?> doOperation(@RequestBody OperationDto operationDto){
-        TaskTwo taskTwo;
+        TaskTwo taskTwo = TaskTwo.builder().build();
         try {
             taskTwo = taskTwoService.doCalculation(operationDto);
             return ResponseEntity.ok().body(taskTwo);
         } catch (HngException e) {
             log.info(e.getLocalizedMessage());
-            return ResponseEntity.ok().body(e.getLocalizedMessage());
+            return ResponseEntity.badRequest().body(taskTwo);
         }
     }
 
