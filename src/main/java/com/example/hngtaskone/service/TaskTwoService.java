@@ -13,27 +13,27 @@ public class TaskTwoService {
         OperationType operationType = checkOperation(operationDto.getOperationType());
         if(operationType.equals(OperationType.ADDITION)){
             return TaskTwo.builder()
-                    .slackUsername("Ligali Titobiloluwa1️⃣")
+                    .slackUsername("Ligali Titobiloluwa2️⃣")
                     .operation_type(OperationType.ADDITION)
                     .result(operationDto.getX() + operationDto.getY())
                     .build();
         }
         if(operationType.equals(OperationType.MULTIPLICATION)){
             return TaskTwo.builder()
-                    .slackUsername("Ligali Titobiloluwa1️⃣")
+                    .slackUsername("Ligali Titobiloluwa2️⃣")
                     .operation_type(OperationType.MULTIPLICATION)
                     .result(operationDto.getX() * operationDto.getY())
                     .build();
         }
         if(operationType.equals(OperationType.SUBTRACTION)){
             return TaskTwo.builder()
-                    .slackUsername("Ligali Titobiloluwa1️⃣")
+                    .slackUsername("Ligali Titobiloluwa2️⃣")
                     .operation_type(OperationType.SUBTRACTION)
                     .result(operationDto.getX() - operationDto.getY())
                     .build();
         }
         return TaskTwo.builder()
-                .slackUsername("Ligali Titobiloluwa1️⃣")
+                .slackUsername("Ligali Titobiloluwa2️⃣")
                 .operation_type(null)
                 .result(0)
                 .build();
