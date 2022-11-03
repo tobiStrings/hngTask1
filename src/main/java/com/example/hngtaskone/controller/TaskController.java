@@ -24,7 +24,11 @@ public class TaskController {
 
     @PostMapping("/task2")
     public ResponseEntity<?> doOperation(@RequestBody OperationDto operationDto){
-        TaskTwo taskTwo = TaskTwo.builder().build();
+        TaskTwo taskTwo = TaskTwo.builder()
+                .slackUsername("Ligali Titobiloluwa2️⃣")
+                .operation_type(null)
+                .result(0)
+                .build();
         try {
             taskTwo = taskTwoService.doCalculation(operationDto);
             return ResponseEntity.ok().body(taskTwo);
