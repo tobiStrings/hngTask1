@@ -1,6 +1,7 @@
 package com.example.hngtaskone.controller;
 
 import com.example.hngtaskone.data.dto.OperationDto;
+import com.example.hngtaskone.data.dto.TaskTwoResponseDto;
 import com.example.hngtaskone.data.model.TaskTwo;
 import com.example.hngtaskone.exception.HngException;
 import com.example.hngtaskone.service.AboutService;
@@ -24,7 +25,7 @@ public class TaskController {
 
     @PostMapping("/task2")
     public ResponseEntity<?> doOperation(@RequestBody OperationDto operationDto){
-        TaskTwo taskTwo = TaskTwo.builder()
+        TaskTwoResponseDto taskTwo = TaskTwoResponseDto.builder()
                 .slackUsername("Ligali Titobiloluwa2️⃣")
                 .operation_type(null)
                 .result(0)

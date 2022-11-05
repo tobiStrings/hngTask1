@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class OperationDto {
-    private String operationType;
+    private String operation_type;
     private int x;
     private int y;
 }
